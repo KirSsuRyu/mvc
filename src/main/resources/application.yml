@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://180.83.169.83:13306/webflux_db
+    username: kirssu
+    password: fbckdrlf
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none  # 개발용 (none, validate, update, create, create-drop)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+        format_sql: true
+        show_sql: true
+
+  # 옵션: 시간 관련 설정 (timestamp 문제 방지용)
+  jackson:
+    time-zone: Asia/Seoul
