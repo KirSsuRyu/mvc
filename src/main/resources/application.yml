@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mariadb://180.83.169.83:13306/webflux_db
-    username: kirssu
-    password: fbckdrlf
+    username: smart_dev
+    password: 1111
     driver-class-name: org.mariadb.jdbc.Driver
 
   jpa:
